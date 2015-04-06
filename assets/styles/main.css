@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+.rowItemContainer {
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #eeeeee;
+}
+
+.rowItemButton {
+    margin-top: 1rem;
+}
+
+#requestDataOutput {
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+
+.fail {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+/* label color */
+.input-field label {
+    color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #4caf50;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #4caf50;
+    box-shadow: 0 1px 0 0 #4caf50;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>REST Aspect | REST GUI and Inspection</title>
+    <link type="text/css" rel="stylesheet" href="assets/styles/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="assets/styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <div id="leftContent" class="col s12 m6">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="rowItemContainer z-depth-1">
+                            <div class="row">
+                                <div class="col s12">
+                                    <h6>Setup</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <hr>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="txtEndpoint" type="text">
+                                    <label for="txtEndpoint">Endpoint</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <label for="methodSelect">Request Method</label>
+                                    <select id="methodSelect">
+                                        <option value="GET">GET</option>
+                                        <option value="POST">POST</option>
+                                        <option value="PUT">PUT</option>
+                                        <option value="DELETE">DELETE</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <a id="btnSubmit" class="btn green">Submit<i class="mdi-content-send right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowItemContainer z-depth-1">
+                            <div class="row">
+                                <div class="col s10">
+                                    <h6>Headers</h6>
+                                </div>
+                                <div class="col s2">
+                                    <a class="btn green addHeader"><i class="mdi-content-add"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <hr>
+                            </div>
+                            <div id="headerRowContainer">
+                            </div>
+                        </div>
+                        <div class="rowItemContainer z-depth-1">
+                            <div class="row">
+                                <div class="col s10">
+                                    <h6>Params</h6>
+                                </div>
+                                <div class="col s2">
+                                    <a class="btn green addParam"><i class="mdi-content-add"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <hr>
+                            </div>
+                            <div id="paramRowContainer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rightContent" class="col s12 m6">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="rowItemContainer z-depth-1">
+                            <div class="row">
+                                <div class="col s12">
+                                    <h5>Status: <span id="txtStatusCode"></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowItemContainer z-depth-1">
+                            <pre id="requestDataOutput"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/scripts/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
+</body>
+</html>
